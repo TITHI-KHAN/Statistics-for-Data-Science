@@ -16,6 +16,16 @@ In statistics, the standard deviation is a measure of the amount of variation or
 
 ![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/487db1d7-26c7-4940-8ccf-11e523748ddf)
 
+How far is each value from the mean point? 
+
+Ex: Age column. A=[5,7,13,87,56,...]. Here, we have different values, and they have a mean value. Suppose, Mean = 47. 
+
+Then the question is how far is each data point from 47?
+
+**Variance:**
+
+If we square the Standard Deviation, then we will get the Variance.
+
 # What are the properties of normal distributions?
 
 • The mean, median, and mode are exactly the same.
@@ -61,6 +71,31 @@ In statistics, the standard deviation is a measure of the amount of variation or
 Skewness refers to a distortion that deviates from the symmetrical bell curve, or normal distribution, in a set of data. If the curve is shifted to the left or to the right, it is said to be skewed.
 
 ![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/e8d53e0c-9c0a-4e82-a544-96901885f9ab)
+
+How data is mainly distributed, we can visually represent that using Skewness. 
+
+If we consider the median as neutral, then yellow color is **positive skewed** and blue color is **negative skewed**. If the data is distributed equally to the left and right side, then it is called '**Symmetric Distribution**'. In Symmetric Distribution, skewness is 0.
+
+**Median:**
+
+Suppose, we have an age column with range from 10 to 100. Min = 10, Max = 90.
+
+People from 17 to 40 years old are more. So, here, we get more data density, frequency, and count value. 
+
+![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/587de41a-095b-467c-bdee-bbe68d0b1248)
+
+If the data of people (25 years old) are high, then ->
+
+![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/ff2431b1-7a64-4a0f-8a51-d2ea4c0da301)
+
+From the beginning of range, then density (number of people) is high. Frequency is also high. So, in that place, it will be right skewed because, it is less in the right side. The more we go to the right side, the less the frequency becomes.
+
+![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/916e2266-bd27-406e-8d44-80411b9d5232)
+
+Normally ->
+
+![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/8a653a08-9f63-44f4-9b31-1428e780185b)
+
 
 # Boxplot
 
@@ -126,5 +161,18 @@ How many distances standard deviation away a data point is, from the mean value?
 ![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/7e1cc6a4-936e-4a00-8806-c79d5336fbf5)
 
 
+# Bayesian Neural Network
 
+Bayesian neural network (BNN) combines neural network with Bayesian inference. Simply speaking, in BNN, we treat the weights and outputs as the variables and we are finding their marginal distributions that best fit the data. The ultimate goal of BNN is to quantify the uncertainty introduced by the models in terms of outputs and weights so as to explain the trustworthiness of the prediction.
 
+Here, one layer sends data distribution to another layer where in a **Standard Neural Network**, it sends weight. 
+
+![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/80c2826c-6dd4-4112-bc67-b0c8bea76abc)
+
+After that, it uses mean value or standard deviation or variance in the back propagation. Then, it updates it ultimately. 
+
+![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/4c372929-f504-459c-8182-8e1e3f3b5837)
+
+From the above figure, we can easily understand the mean value. Besides, we can also understand the data distribution by the data frequency and bell curve. 
+
+Data can be distributed in many ways.
