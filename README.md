@@ -224,7 +224,7 @@ How many distances standard deviation away a data point is, from the mean value?
 
 ![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/03fe51ea-252f-4928-a368-0bf4460c416d)
 
-![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/4f0cc537-b733-4836-a7e6-7fef5fe36894)
+![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/876a8158-6492-4494-9e88-578ca567ab65)
 
 Here, the value of sigma is mainly the z-score. in -1σ (-1 sigma), the value of z-score is -1. For +1σ, the value is +1. Here, x is the value of data point.  
 
