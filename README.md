@@ -245,3 +245,21 @@ After that, it uses mean value or standard deviation or variance in the back pro
 From the above figure, we can easily understand the mean value. Besides, we can also understand the data distribution by the data frequency and bell curve. 
 
 Data can be distributed in many ways.
+
+# Code
+
+The StandardScaler and z-score scaling are related concepts but not the same thing. Let me explain the difference between them:
+
+**1. Z-Score Scaling:**
+
+Z-score scaling, also known as standardization, is a specific method of scaling data where the values are transformed to have a mean of 0 and a standard deviation of 1. The formula for calculating the z-score for a data point x is given by:
+
+**z = (x - mean) / standard deviation**
+
+Here, "mean" represents the mean of the data, and "standard deviation" is the standard deviation of the data. Z-score scaling is useful when you want to convert data to a standard normal distribution, making it easier to compare and analyze different features.
+
+**2. StandardScaler:**
+
+StandardScaler is a data preprocessing technique provided by the scikit-learn library in Python. It is used to apply z-score scaling (standardization) to a dataset. The StandardScaler class automatically calculates the mean and standard deviation of each feature in the input data and then scales the data using the z-score formula mentioned earlier. The main advantage of using StandardScaler is that it can be easily applied to multiple features simultaneously.
+
+So, to summarize, StandardScaler is a specific implementation of z-score scaling, and it is commonly used in machine learning to preprocess data before feeding it to various algorithms. By using StandardScaler, you can easily standardize features to have zero mean and unit variance, which helps in improving the performance and convergence of machine learning models.
