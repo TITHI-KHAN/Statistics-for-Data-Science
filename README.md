@@ -48,6 +48,8 @@ The closer the data is to the mean, the better the result will be. But, if we re
 
 *****If there is outlier, then there is a robust way for data scaling such as Robust Scaler, and Logarithmic Transformation.**
 
+If +3 * Std Deviation = 3Std Deviation (value of that point which is in +3 sigma).
+
 **Variance:**
 
 If we square the Standard Deviation, then we will get the Variance.
