@@ -22,6 +22,32 @@ Ex: Age column. A=[5,7,13,87,56,...]. Here, we have different values, and they h
 
 Then the question is how far is each data point from 47?
 
+Besides, usually, data are not distributed normally. But, there are some data which work like the normal one and kind of similar to the normal distribution. Ex: age, income, spending days in hospital, baby birth wight. etc. These data follow normal distribution.
+
+If data follows normal distribution, then the mean point of the data and the negative side (left), and positive side (right) ->
+
+![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/e62c05e3-809d-415f-9c4e-6ff2b363bfd0)
+
+![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/984b0d37-7d5e-4cdc-ae09-635ad5318fc0)
+
+**-3 sigma to +3 sigma** -> Total in general data distribution. Here, 99.6% data.
+**-2 sigma to +2 sigma**-> 95.4% data.
+**-1 sigma to +1 sigma** -> 68.2% data out of total data.
+
+The closer the data is to the mean value, the better. In that case, 68.2% data is better but 100-68.2 = 31.8% data gets lost or removed. We cannot remove data like this way. It is not a good practice. 
+
+Normally, we work with 99.6% data. In that case, 0.4% data gets removed and normally, those 0.4% data gets to be considerd as outliers.
+
+However, if we want to increase the number of outliers, then we can consider either -2.5 sigma to +2.5 sigma or -2 sigma to +2 sigma. 
+
+If we consider -2 sigma to +2 sigma, then 4.6% data will be lost (outlier).
+
+If we consider -2.5 sigma to +2.5 sigma, then 2% data will be lost (outlier).
+
+The closer the data is to the mean, the better the result will be. But, if we remove data, then the result of real-life prediction will not be better. So, the less we will remove data, the better. 
+
+*****If there is outlier, then there is a robust way for data scaling such as Robust Scaler, and Logarithmic Transformation.**
+
 **Variance:**
 
 If we square the Standard Deviation, then we will get the Variance.
@@ -35,6 +61,12 @@ If we square the Standard Deviation, then we will get the Variance.
 • The distribution can be described by two values: the mean and the standard deviation.
 
 ![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/86555a47-d60a-4049-b02d-479242a5dcef)
+
+![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/abbb251b-8399-472c-a2f0-73758e822e9c)
+
+**Mean** -> It starts from the smaller side and then comes to 0; again starts from bigger side and comes to the smaller side 
+
+
 
 • The mean determines where the peak of the curve is centered. Increasing the mean moves the curve right, while decreasing it moves the curve left.
 
@@ -99,6 +131,10 @@ Normally ->
 
 # Boxplot
 
+Using boxplot, we can detect outlier. The data which is outside the range of the box, will be considered as outlier (It is far from the mean data. It can be either in the positive side or negative side).
+
+![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/ac6f6df7-8a2c-405e-b9d9-6e9b3c6d2b2f)
+
 Typically, any data point that falls below Q1 - 1.5 * IQR or above Q3 + 1.5 * IQR is considered an outlier. 
 
 This is a general guideline, and the threshold of 1.5 can be adjusted based on the specific requirements of your analysis or the characteristics of your dataset.
@@ -107,30 +143,29 @@ This is a general guideline, and the threshold of 1.5 can be adjusted based on t
 
 **To create a boxplot, you can follow these steps:**
 
-1. Gather your dataset: Collect the numerical data that you want to visualize using a box plot.
+1. **Gather your dataset**: Collect the numerical data that you want to visualize using a box plot.
 
-2. Determine the key components: Identify the minimum, first quartile (Q1), median (Q2), third quartile (Q3), and maximum values of your dataset.
+2.**Determine the key components**: Identify the minimum, first quartile (Q1), median (Q2), third quartile (Q3), and maximum values of your dataset.
 
-3. Calculate the interquartile range (IQR): Subtract Q1 from Q3 to obtain the IQR.
+3. **Calculate the interquartile range (IQR)**: Subtract Q1 from Q3 to obtain the IQR.
 
-4. Identify any outliers: Determine if there are any values that fall below Q1 - 1.5 * IQR or above Q3 + 1.5 * IQR. These values are considered outliers and may be plotted individually as points.
+4. **Identify any outliers**: Determine if there are any values that fall below Q1 - 1.5 * IQR or above Q3 + 1.5 * IQR. These values are considered outliers and may be plotted individually as points.
 
-5. Set up the box plot: Draw a number line or axis to represent the range of your dataset. Place a box that spans from Q1 to Q3 on the number line. Draw a line within the box to represent the median (Q2).
+5.**Set up the box plot**: Draw a number line or axis to represent the range of your dataset. Place a box that spans from Q1 to Q3 on the number line. Draw a line within the box to represent the median (Q2).
 
-6. Add whiskers: Extend lines, known as "whiskers," from the box to the minimum and maximum values that are not considered outliers.
+6. **Add whiskers**: Extend lines, known as "whiskers," from the box to the minimum and maximum values that are not considered outliers.
 
-7. Plot outliers: If there are any outliers, plot them individually as points outside the whiskers.
+7. **Plot outliers**: If there are any outliers, plot them individually as points outside the whiskers.
 
-8. Label and title: Add appropriate labels to the number line, box, whiskers, and outliers. Provide a title that describes the dataset or
-the purpose of the box plot.
+8. **Label and title**: Add appropriate labels to the number line, box, whiskers, and outliers. Provide a title that describes the dataset or the purpose of the box plot.
 
 **Quartile & Percentile:**
 
-The first quartile (Q1) corresponds to the 25th percentile, which means 25% of the data falls below Q1. 
+The **first quartile (Q1)** corresponds to the **25th percentile**, which means 25% of the data falls below Q1. 
 
-The second quartile (Q2) is the median and corresponds to the 50th percentile, indicating that 50% of the data falls below Q2. 
+The **second quartile (Q2)** is the median and corresponds to the **50th percentile**, indicating that 50% of the data falls below Q2. 
 
-The third quartile (Q3) corresponds to the 75th percentile, where 75% of the data falls below Q3.
+The **third quartile (Q3)** corresponds to the **75th percentile**, where 75% of the data falls below Q3.
 
 ![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/cf87dedc-c16c-426c-bb46-079be43057d5)
 
@@ -138,11 +173,33 @@ The third quartile (Q3) corresponds to the 75th percentile, where 75% of the dat
 
 ![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/c1a9a443-2da6-498d-93ac-ac48e1f8181c)
 
+![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/b38405a6-6284-4d99-8a08-e921e62c4958)
+
+Here, 20 is an **outlier**. The mean value of 1 to 10 is 5. 20-5=15 difference. It's a huge difference from the mean value. So, 20 is an outlier.
+
+We need **Min, Max, Upper Whisker / Fence, Lower Whisker / Fence, Q1 / Lower Quartile, Q2 / Middle Quartile, and Q3 / Upper Quartile** to draw the boxplot.
+
+Before finding out Q1, we have to sort the data in **ascending order**.
+
+**Q2** = (50/100) * (N+1)
+
+![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/2ceb5ea0-f1e3-4b24-8500-0780e967ab72)
+
+IQR or Inter Quartile Range : Data which are in the range from Q1 to Q3.
+
+![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/83496eda-bede-497a-98a2-21014e642b58)
+
+Data which are outside the Upper Whisker and Lower Whisker are also considered as Outlier.
+
+Boxplot is mostly used in the stock market. 
+
 **Boxplot with matplotlib:**
 
 ![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/df2f3676-105f-4d78-a786-ded71b16222d)
 
 ![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/5c15af5b-4245-461e-a9d2-b3c88224b506)
+
+Here, fig.ax -> it will take a figure (fig) and it will take a particular axis (ax).
 
 **Boxplot with Seaborn:**
 
@@ -153,6 +210,8 @@ The third quartile (Q3) corresponds to the 75th percentile, where 75% of the dat
 # Histogram
 
 ![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/aa3e9271-6f2e-4c28-a5ab-436bcca00990)
+
+It visually represents the count value of the data frequency. 
 
 # Z Scores
 
