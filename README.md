@@ -52,6 +52,8 @@ The closer the data is to the mean, the better the result will be. But, if we re
 
 If we square the Standard Deviation, then we will get the Variance.
 
+![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/e85643f7-20e4-4f21-be24-ae6514fae0a5)
+
 # What are the properties of normal distributions?
 
 • The mean, median, and mode are exactly the same.
@@ -64,9 +66,13 @@ If we square the Standard Deviation, then we will get the Variance.
 
 ![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/abbb251b-8399-472c-a2f0-73758e822e9c)
 
-**Mean** -> It starts from the smaller side and then comes to 0; again starts from bigger side and comes to the smaller side 
+**Mean** -> It starts from the smaller side and then comes to 0; again starts from bigger side and comes to the smaller side (comes from 0 to the end).
 
+**Median** -> Middle point. It starts from 0 to the end (100). So, 50 is the median.
 
+**Mode** -> 50 (as it appears the most of the times. So, high frequency).
+
+Here, distribution is symmetric. In the left side, there are half values. In the right side, there are half values. The way it increases, it also decreases the same way. This distribution can be explained by two values : Mean and Standard Deviation. That's why , in BNN (Bayesian Neural Network), the value of mean or variance or SD mainly gets updated.
 
 • The mean determines where the peak of the curve is centered. Increasing the mean moves the curve right, while decreasing it moves the curve left.
 
@@ -127,7 +133,6 @@ From the beginning of range, then density (number of people) is high. Frequency 
 Normally ->
 
 ![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/8a653a08-9f63-44f4-9b31-1428e780185b)
-
 
 # Boxplot
 
@@ -217,8 +222,13 @@ It visually represents the count value of the data frequency.
 
 How many distances standard deviation away a data point is, from the mean value?
 
-![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/7e1cc6a4-936e-4a00-8806-c79d5336fbf5)
+![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/03fe51ea-252f-4928-a368-0bf4460c416d)
 
+![image](https://github.com/TITHI-KHAN/Statistics-for-Data-Science/assets/65033964/4f0cc537-b733-4836-a7e6-7fef5fe36894)
+
+Here, the value of sigma is mainly the z-score. in -1σ (-1 sigma), the value of z-score is -1. For +1σ, the value is +1. Here, x is the value of data point.  
+
+Z-Score is mainly used in the Standard Scaler. In Standard Scaler, Mean is 0 and Standard Deviation is 1. 
 
 # Bayesian Neural Network
 
